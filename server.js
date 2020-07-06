@@ -10,7 +10,7 @@ const path = require("path");
 const config = require("config");
 
 //Import Routes
-const testRoutes = require("./routes/test");
+const authRoutes = require("./routes/auth");
 
 //Connect to DB
 connectDB();
@@ -25,7 +25,7 @@ app.use(cookieParser());
 // app.use(expressValidator());
 app.use(cors());
 
-app.use("/api", testRoutes);
+app.use("/api", authRoutes);
 
 // Serve static assets in production
 if (process.env.NODE_ENV === "production") {
