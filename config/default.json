@@ -1,0 +1,4 @@
+{
+  "PORT": 5000,
+  "mongoURI": "mongodb+srv://jlutz110:Mongoloid99$@codelab.d1dkn.mongodb.net/CodeLab"
+}
