@@ -5,7 +5,6 @@ const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const connectDB = require("./config/db");
-const expressValidator = require("express-validator");
 const path = require("path");
 const config = require("config");
 
@@ -22,7 +21,6 @@ const app = express();
 app.use(morgan("dev"));
 app.use(bodyParser.json());
 app.use(cookieParser());
-// app.use(expressValidator());
 app.use(cors());
 
 app.use("/api", authRoutes);
